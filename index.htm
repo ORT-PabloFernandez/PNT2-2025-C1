@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/styles.css" rel="stylesheet" />
     <title>PNT2</title>
+    <script>
+      function handlerClick_Card(element) {
+        //console.log(element);
+        //const user = document.getElementById(3);
+        // TODO: utilizar querySelector en lugar de children
+        let contador = element.children[0].children[0].children[1].children[2];
+        contador.innerText = parseInt(contador.innerText) + 1;
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -15,7 +24,7 @@
     </header>
     <main>
       <ul class="users-list">
-        <li class="user-item">
+        <li class="user-item" id="1" onclick="handlerClick_Card(this)">
           <div class="card user-item__content">
             <a href="#">
               <div class="user-item__image avatar">
@@ -24,11 +33,12 @@
               <div class="user-item__info">
                 <h2>Adele Vance</h2>
                 <h3>NY</h3>
+                <h3>0</h3>
               </div>
             </a>
           </div>
         </li>
-        <li class="user-item">
+        <li class="user-item" id="2" onclick="handlerClick_Card(this)">
           <div class="card user-item__content">
             <a href="#">
               <div class="user-item__image avatar">
@@ -37,6 +47,21 @@
               <div class="user-item__info">
                 <h2>Alex Wilber</h2>
                 <h3>ARG</h3>
+                <h3>0</h3>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="user-item" id="3" onclick="handlerClick_Card(this)">
+          <div class="card user-item__content">
+            <a href="#">
+              <div class="user-item__image avatar">
+                <img src="/img/Diego Siciliani.jpg" />
+              </div>
+              <div class="user-item__info">
+                <h2>Diego Siciliani</h2>
+                <h3>ITALIA</h3>
+                <h3>0</h3>
               </div>
             </a>
           </div>
