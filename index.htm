@@ -5,53 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/styles.css" rel="stylesheet" />
     <title>PNT2</title>
-    <script>
-      function handlerClick_Card(element) {
-        //console.log(element);
-        //const user = document.getElementById(3);
-        // TODO: utilizar querySelector en lugar de children
-        let contador = element.children[0].children[0].children[1].children[2];
-        contador.innerText = parseInt(contador.innerText) + 1;
-      }
-
-      function crearUsuarios() {
-        const main = document.getElementById("main");
-        const users = document.createElement("ul");
-        users.className = "users-list";
-        main.appendChild(users);
-
-        const userItem = document.createElement("li");
-        userItem.className = "user-item";
-        users.appendChild(userItem);
-
-        const card = document.createElement("div");
-        card.className = "card user-item__content";
-        userItem.appendChild(card);
-
-        const link = document.createElement("a");
-        link.href = "#";
-        card.appendChild(link);
-
-        const userItemImage = document.createElement("div");
-        userItemImage.className = "user-item__image avatar";
-        link.appendChild(userItemImage);
-
-        const imageUser = document.createElement("img");
-        imageUser.src = "img/Adele Vance.jpg";
-        userItemImage.appendChild(imageUser);
-
-        const userItemInfo = document.createElement("div");
-        userItemInfo.className = "user-item__info";
-        link.appendChild(userItemInfo);
-
-        const nameUser = document.createElement("h2");
-        nameUser.innerText = "Adele Vance";
-        userItemInfo.appendChild(nameUser);
-
-        const stateUser = document.createElement("h3");
-        stateUser.innerText = "NY";
-        userItemInfo.appendChild(stateUser);
-      }
+    <script src="src/app.js">
+      // function handlerClick_Card(element) {
+      //   //console.log(element);
+      //   //const user = document.getElementById(3);
+      //   // TODO: utilizar querySelector en lugar de children
+      //   let contador = element.children[0].children[0].children[1].children[2];
+      //   contador.innerText = parseInt(contador.innerText) + 1;
+      // }
     </script>
   </head>
   <body>
